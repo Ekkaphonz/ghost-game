@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript st</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="up" onclick="moveTop()">👆</button>
+    <button id="down" onclick="movedown()">👇</button>
+    <button id="left" onclick="moveleft()">👈</button>
+    <button id="right" onclick="moveright()">👉</button>
+    <div id="hud">
+        ❤️
+        <div class="hp-bar"><div id="player-hp" class="hp-fill"></div></div>
+        <span id="player-hp-text">100/100</span>
+        <span class="controls">WASD เดิน · คลิกซ้าย ตีไฟกลับ · คลิกขวาค้าง บล็อก</span>
+    </div>
+    <div id="game">
+        <span id="player">👨🏻</span>
+        <span id="ghost">👨🏿‍🦲<span class="hp-bar"><span id="ghost-hp" class="hp-fill"></span></span></span>
+        <div id="game-over">
+            <div>💀 GAME OVER</div>
+            <button onclick="location.reload()">เล่นใหม่</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
